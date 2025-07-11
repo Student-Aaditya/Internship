@@ -1,0 +1,377 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background:rgb(23, 23, 23);
+}
+
+.hero {
+   background:rgb(23, 23, 23);
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  animation: fadeSlideUp 1.5s ease-out both;
+}
+
+.hero h1 {
+  font-size: 10rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.hero h1:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* navbar */
+
+.navbar:hover .navbar-nav a{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.navbar-brand img{
+  transition: 0.4s ease;
+    text-decoration: none;
+    color: var(--black);
+    vertical-align: top;
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 0 0 12rem;
+}
+.navbar-nav {
+  width: 45rem;
+  margin: 0 0 0 10rem;
+}
+.navbar-nav a{
+  color: white;
+  margin: 0 0 0 1rem;
+}
+.navbar a{
+  font-size: larger;
+}
+.navbar-auth{
+  display: flex;
+  margin: 0 0 0 7rem;
+}
+.navbar-auth a{
+  color: white;
+  margin: 0 0 0 1rem;
+}
+
+/* course highlights */
+
+#courses h1{
+  margin: 1rem ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#courses #card {
+  width: 100%;
+  height: 35rem;
+}
+
+#card .card1{
+  width: 18rem;
+  height: 28rem;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+#card{
+  display: flex;
+  padding: 0 0 0 4rem;
+}
+#card img{
+  width: 16rem;
+  height: 14rem;
+  margin:1rem ;
+  border-radius: 12px;
+}
+#card .card-title{
+  color: white;
+  margin: 0 0 0 5rem;
+}
+#card .card-text{
+  color: wheat;
+} 
+#card .btn{
+  margin: 2rem 0 0 6rem;
+}
+
+.card1:hover{
+  box-shadow: 5px 6px 5px wheat;
+  cursor: pointer;
+}
+
+.card1 .btn:hover{
+  background-color: red;
+  color: white;
+}
+
+/* crash course */
+#crash h1{
+  color: white;
+  margin: 0 0 0 28rem;
+}
+#crash .h1{
+  margin: 0 0 0 40rem;
+}
+
+#poster{
+  width: 100%;
+  height: 16rem;
+  display: flex;
+}
+
+.poster{
+  width: 26rem;
+  height: 12rem;
+  margin: 2rem;
+   border-radius: 12px;
+  box-shadow: 8px 7px 9px rgb(218, 236, 155);
+  cursor: pointer;
+}
+
+.poster .poster-body .poster-title{
+  color: wheat;
+  margin: 1rem 0 0 .3rem;
+}
+
+.poster .poster-body .poster-text{
+  color: white;
+  margin: 1rem 0 0 1.5rem;
+  font-size: large;
+}
+.poster-body{
+  padding: 1rem;
+}
+
+/* achievement */
+.Achivement{
+  display: flex;
+}
+
+.achive-poster img{
+  width: 36rem;
+  height: 36rem;
+  border: 5px solid white;
+  margin: 3rem 0 0 8rem;
+  border-radius: 12px;
+}
+
+.achive-detail{
+  width: 36rem;
+  height:36rem ;
+  margin: 3rem 0 0 6rem;
+}
+.achive-detail h1{
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+.achive-detail p{
+  color: rgb(160, 157, 157);
+  margin: 3rem 0 0 0;
+}
+
+/* testinimial */
+#test{
+  width: 100%;
+  height: 12rem;
+  margin: 2rem 0 0 0;
+  display: flex;
+}
+
+#test p{
+  color: wheat;
+  font-size: 6rem;
+  margin: 1rem 0 0 10rem;
+  opacity: 50%;
+}
+
+#courses{
+  width: 100%;
+  height: 40rem;
+  
+}
+
+#course-card{
+  display: flex
+}
+.card2{
+  width: 25rem;
+  height: 34rem;
+  border: 2px solid rgb(227, 227, 230);
+  margin: 2rem;
+  border-radius: 12px;
+}
+.card2 img{
+  width: 22rem;
+  height: 18rem;
+  margin: 1.5rem;
+}
+
+.course-title{
+  color: wheat;
+}
+.course-text{
+  color: wheat;
+  margin: .5rem 0 0 1rem;
+  font-size: 1.3rem;
+}
+
+.course-body .btn{
+  border-radius: 8px;
+  margin: 1rem 0 0 8rem ; 
+  font-size: 1.3rem;
+}
+
+#sec-data{
+  width: 100%;
+  height: 35rem;
+  margin: 2rem 0 0 0;
+}
+
+#sec-data h1{
+  color: aliceblue;
+  margin: 1rem 0 0 15rem;
+}
+
+.icon{
+  display: flex;
+}
+.icon img{
+  width: 16rem;
+  height: 16rem;
+  margin: 2rem 0 0 5rem;
+  border-radius: 12px;
+  box-shadow: 5px 6px 5px wheat;
+}
+
+.icons{
+  display: flex;
+  margin: 2rem 0 0 5rem;
+}
+
+.icons img{
+  width: 9rem;
+  height: 9rem;
+  margin:2rem 0 0 5rem ;
+  border-radius: 12px;
+  box-shadow: 5px 6px 5px wheat;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: white;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+.contact p {
+  margin-right: 10px;
+  color: white;
+}
+
+.logo img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  /* background: #111; */
+  border: 1px solid #444;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-icons .fab{
+  color: white;
+  background-color: white;
+}
+
+.footer-section h3{
+  color: white;
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color:white;
+}
