@@ -61,7 +61,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/sign", (req, res) => {
-    res.render("signup.ejs");
+    res.render("./Auth/Sign.ejs");
 })
 app.post("/sign", async (req, res) => {
     try {
@@ -76,7 +76,7 @@ app.post("/sign", async (req, res) => {
 })
 app.get("/login", (req, res) => {
     
-    res.render("login.ejs");
+    res.render("./Auth/Login.ejs");
 })
 
 app.post("/login", passport.authenticate("local", { failureRedirect: "/login", failureFlash: true }), async (req, res) => {
