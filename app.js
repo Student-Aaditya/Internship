@@ -69,7 +69,6 @@ app.post("/sign", async (req, res) => {
         const newuser = new User({ username, email });
         const regis = await User.register(newuser, password);
         res.redirect("/");
-        // sms(username);
     } catch (err) {
         console.error(err);
     }
