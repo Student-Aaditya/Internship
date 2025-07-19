@@ -1,6 +1,5 @@
 require("dotenv").config();
 
-
 const express = require("express");
 const path = require("path");
 const app = express();
@@ -17,8 +16,6 @@ const session = require("express-session");
 const ejsMate = require("ejs-mate");
 
 const flash = require("connect-flash");
-
-
 
 app.set("views", path.join(__dirname, "view"));
 app.set("view engine", "ejs");
